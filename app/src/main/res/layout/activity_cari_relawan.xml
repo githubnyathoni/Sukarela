@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".CariRelawanActivity">
+
+    <TextView
+        android:id="@+id/Registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Registrasi Organisasi"
+        android:textColor="#29CBEC"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_below="@id/Registrasi"
+        android:layout_above="@+id/relativebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/garis"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garis"/>
+
+            <ImageView
+                android:id="@+id/nomer1"
+                android:layout_alignTop="@id/garis"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-7dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nomer1"/>
+
+            <ImageView
+                android:id="@+id/nomer2"
+                android:layout_toLeftOf="@id/tengah"
+                android:layout_marginRight="40dp"
+                android:layout_alignTop="@id/garis"
+                android:layout_marginTop="-7dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nomer2belum"/>
+
+            <ImageView
+                android:id="@+id/tengah"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:src="@drawable/garis"
+                android:layout_alignTop="@id/garis"
+                android:layout_marginTop="-7dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/nomer3"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/tengah"
+                android:layout_alignTop="@id/garis"
+                android:layout_marginTop="-7dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nomer3belum"/>
+
+            <ImageView
+                android:id="@+id/nomer4"
+                android:layout_alignTop="@id/garis"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-7dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nomer4belum"/>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/namadepan"
+                android:layout_below="@id/tengah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Depan"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/namadepan"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/namabelakang"
+                android:layout_below="@id/namadepan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Belakang"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/namabelakang"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_below="@id/namabelakang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nohp"
+                android:layout_below="@id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Hp +62"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="number"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/nohp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/penjelasanpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nohp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:text="Password Minimal 8 (delapan) karakter"
+                android:textColor="#29CBEC"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_below="@id/penjelasanpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/konfirmasipassword"
+                android:layout_below="@id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi Password"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/edit_text"
+                android:layout_alignTop="@id/konfirmasipassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativebutton"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling">
+
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Daftar"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

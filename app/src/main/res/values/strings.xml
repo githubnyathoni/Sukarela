@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Sukarela</string>
+    <string name="title_home">Home</string>
+    <string name="title_jadi_relawan">Jadi Relawan</string>
+    <string name="title_cari_relawan">Cari Relawan</string>
+
+
+    <string name="app_name1">Navdrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string-array name="fokusutama">
+        <item>- Fokus Utama -</item>
+        <item>Bencara Alam</item>
+        <item>Acara</item>
+        <item>Pendidikan</item>
+        <item>Lingkungan</item>
+        <item>Pembangunan</item>
+        <item>Kemanusiaan</item>
+        <item>Kesehatan</item>
+        <item>Bantuan Hukum</item>
+    </string-array>
+
+    <string-array name="fokustambahan">
+        <item>- Fokus Tambahan -</item>
+        <item>Bencara Alam</item>
+        <item>Acara</item>
+        <item>Pendidikan</item>
+        <item>Lingkungan</item>
+        <item>Pembangunan</item>
+        <item>Kemanusiaan</item>
+        <item>Kesehatan</item>
+        <item>Bantuan Hukum</item>
+    </string-array>
+
+    <string name="teks_informasi_pastikan_benar">Pastikan semua Informasi tentang organisasi sudah benar, klik simpan untuk menyelesaikan proses registrasi atau kembali untuk mengedit informasi.</string>
+    <string name="teks_informasi_berhasil_daftar">Langkah selanjutnya adalah mengaktivasi akun Anda dengan membuka email yang telah dikirimkan ke email Anda. \n\n
+        Setelah Anda melakukan aktivasi akun, mohon menunggu untuk proses verifikasi organisasi oleh tim sukarela. kami akan melakukan verifikasi terlebih dahulu dalam 3 (tiga) hari kedepan. \n\n
+        Apabila proses verifikasi organisasi telah selesai, Anda akan menerima email mengenai status verifikasi organisasi dan dapat segera membuat aktivitas di sukarela. \n\n
+        Terimakasih telah menggunakan sukarela!
+    </string>
+
+    <string name="teks_informasi_aktivitas_benar">Pastikan semua informasi aktivitas yang anda buat sudah benar, klik simpan untuk mempublikasikan aktivitas yang anda buat.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="tentang">Tentang</string>
+    <string name="keluar">Keluar</string>
+    <string name="masuk">masuk</string>
+    <string name="aksi_baik">Aksi Baik</string>
+
+</resources>

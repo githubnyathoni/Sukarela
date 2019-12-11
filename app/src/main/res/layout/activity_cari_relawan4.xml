@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".CariRelawan4Activity"
+    >
+
+    <TextView
+        android:id="@+id/Registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Registrasi Organisasi"
+        android:textColor="#29CBEC"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_below="@id/Registrasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/garis" />
+
+    <ImageView
+        android:id="@+id/nomer1"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-7dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/nomer1"/>
+
+    <ImageView
+        android:id="@+id/nomer2"
+        android:layout_toLeftOf="@id/tengah"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginTop="-7dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/nomer2"/>
+
+    <ImageView
+        android:id="@+id/tengah"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:src="@drawable/garis"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginTop="-7dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/nomer3"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tengah"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginTop="-7dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/nomer3"/>
+
+    <ImageView
+        android:id="@+id/nomer4"
+        android:layout_alignTop="@id/garis"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-7dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/nomer4"/>
+
+    <ScrollView
+        android:layout_below="@id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/pratinjau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Pratinjau"
+                android:textColor="#29CBEC"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/namaorganisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Organisasi"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/pratinjau"/>
+
+            <TextView
+                android:id="@+id/ISInamaorganisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/pratinjau"/>
+
+
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/namaorganisasi"/>
+
+            <TextView
+                android:id="@+id/ISIdeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/namaorganisasi"/>
+
+            <TextView
+                android:id="@+id/minat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minat"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/deskripsi"/>
+
+            <TextView
+                android:id="@+id/ISIfokusutama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": - ISI fokus utama -"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/deskripsi"/>
+
+            <TextView
+                android:id="@+id/ISIfokustambahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  - ISI fokus tambahan -"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISIfokusutama"/>
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ISIfokustambahan"/>
+
+            <TextView
+                android:id="@+id/ISIlokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISIfokustambahan"/>
+
+            <TextView
+                android:id="@+id/nohp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telepon"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/lokasi"/>
+
+            <TextView
+                android:id="@+id/ISInohp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISIlokasi"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/nohp"/>
+
+            <TextView
+                android:id="@+id/ISIwebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISInohp"/>
+
+            <TextView
+                android:id="@+id/administrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrator"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/website"/>
+
+            <TextView
+                android:id="@+id/ISIadministrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISIwebsite"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/administrator"/>
+
+            <TextView
+                android:id="@+id/ISIemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": ISI"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/namaorganisasi"
+                android:layout_below="@id/ISIadministrator"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/email"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:textSize="15dp"
+                android:layout_height="100dp"
+                android:textColor="#fff"
+                android:text="@string/teks_informasi_pastikan_benar"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearkategori"
+        android:background="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/kembali"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kembali"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/selanjutnya"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Simpan"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </GridLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

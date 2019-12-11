@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Buat Aktivitas Organisasi"
+        android:textColor="#29CBEC"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearkategori"
+        android:layout_below="@id/Registrasi"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/uploadgambar"
+                    android:textAllCaps="false"
+                    android:textColor="#29CBEC"
+                    android:background="@drawable/buttondaftar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="155dp"
+                    android:layout_width="match_parent" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tambahfoto1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/namaaktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Nama Aktivitas"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/namaaktivitas"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/waktudanlokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WAKTU &amp; LOKASI AKTIVITAS"
+                android:textColor="#000"
+                android:layout_below="@id/namaaktivitas"
+                android:layout_marginLeft="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/periodewaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/waktudanlokasi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Periode Waktu Aktivitas"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/periodewaktu"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/periodetanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/periodewaktu"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Periode Tanggal Aktivitas"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/periodetanggal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/periodetanggal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Lokasi Aktivitas"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/lokasi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/batasregistrasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lokasi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Batas Registrasi Relawan"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/batasregistrasi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/detailaktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETAIL AKTIVITAS"
+                android:textColor="#000"
+                android:layout_below="@id/batasregistrasi"
+                android:layout_marginLeft="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/detailaktivitas"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Deskripsi"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignTop="@id/deskripsi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tugas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/deskripsi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Tugas relawan, Perlu disiapkan, Briefing, Informasi tambahan dll."
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignTop="@id/tugas"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linearkategori"
+        android:background="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buataktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Buat Aktivitas"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

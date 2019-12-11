@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.sukarela.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.sukarela.ui.dashboard.DashboardFragment"
+        android:label="@string/title_jadi_relawan"
+        tools:layout="@layout/fragment_jadi_relawan" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.sukarela.ui.carirelawan.CariRelawanFragment"
+        android:label="@string/title_cari_relawan"
+        tools:layout="@layout/fragment_cari_relawan" />
+
+    <fragment
+        android:id="@+id/nav_notifikasi"
+        android:name="com.example.sukarela.ui.notifikasi.GalleryFragment"
+        android:label="@string/notifikasi"
+        tools:layout="@layout/fragment_aksi_baik" />
+
+    <fragment
+        android:id="@+id/nav_aksibaik"
+        android:name="com.example.sukarela.ui.notifikasi.GalleryFragment"
+        android:label="@string/aksi_baik"
+        tools:layout="@layout/fragment_aksi_baik" />
+
+    <fragment
+        android:id="@+id/nav_bantuan"
+        android:name="com.example.sukarela.ui.bantuan.SlideshowFragment"
+        android:label="@string/bantuan"
+        tools:layout="@layout/fragment_bantuan" />
+
+    <fragment
+        android:id="@+id/nav_tentang"
+        android:name="com.example.sukarela.ui.tentang.ToolsFragment"
+        android:label="@string/tentang"
+        tools:layout="@layout/fragment_tentang" />
+
+    <fragment
+        android:id="@+id/nav_keluar"
+        android:name="com.example.sukarela.ui.share.ShareFragment"
+        android:label="@string/keluar"
+        tools:layout="@layout/fragment_share" />
+
+
+
+
+</navigation>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearkategori"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/jalanjakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI nama aktivitas"
+                android:textColor="#00ccff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/image"/>
+
+            <ImageView
+                android:id="@+id/logoorganisasi"
+                android:layout_below="@id/name"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/tambahfoto1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/ISInamaorganisasi"
+                android:layout_toRightOf="@id/logoorganisasi"
+                android:layout_alignTop="@id/logoorganisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI nama organisasi"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/garis"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text"
+                android:layout_below="@id/logoorganisasi"/>
+
+            <TextView
+                android:id="@+id/waktudanlokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WAKTU &amp; LOKASI AKTIVITAS"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/garis"/>
+
+            <ImageView
+                android:id="@+id/kalender"
+                android:layout_below="@id/waktudanlokasi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/kalender"/>
+
+            <TextView
+                android:id="@+id/ISIkalender"
+                android:layout_toRightOf="@id/kalender"
+                android:layout_alignTop="@id/kalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI kalender"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/jam"
+                android:layout_below="@id/kalender"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/jam"/>
+
+            <TextView
+                android:id="@+id/ISIjam"
+                android:layout_toRightOf="@id/jam"
+                android:layout_alignTop="@id/jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI jam"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/lokasi"
+                android:layout_below="@id/jam"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/lokasi"/>
+
+            <TextView
+                android:id="@+id/ISIlokasi"
+                android:layout_toRightOf="@id/lokasi"
+                android:layout_alignTop="@id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI lokasi"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/warning"
+                android:layout_below="@id/lokasi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/warning"/>
+
+            <TextView
+                android:id="@+id/ISIwarning"
+                android:layout_toRightOf="@id/warning"
+                android:layout_alignTop="@id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI warning"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/garis1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text"
+                android:layout_below="@id/warning"/>
+
+            <TextView
+                android:id="@+id/detailaktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETAIL AKTIVITAS"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/garis1"/>
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI Deskripsi"
+                android:textColor="#000"
+                android:layout_below="@id/detailaktivitas"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/garis2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text"
+                android:layout_below="@id/deskripsi"/>
+
+            <TextView
+                android:id="@+id/tugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI Tugas"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/garis2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang"
+                android:id="@+id/tentang"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tugas"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:id="@+id/about"
+                android:textColor="#000"
+                android:layout_below="@id/tentang"
+                android:layout_marginLeft="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="15sp"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

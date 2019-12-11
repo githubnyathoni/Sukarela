@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_notifikasi"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/notifikasi" />
+
+        <item
+            android:id="@+id/nav_aksibaik"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/aksi_baik" />
+
+        <item
+            android:id="@+id/nav_bantuan"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/bantuan" />
+        <item
+            android:id="@+id/nav_tentang"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/tentang" />
+    </group>
+
+
+
+
+
+
+</menu>

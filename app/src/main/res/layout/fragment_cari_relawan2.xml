@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Registrasi Organisasi"
+        android:textColor="#29CBEC"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_below="@id/Registrasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/garis" />
+
+    <ImageView
+        android:id="@+id/nomer1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-7dp"
+        android:src="@drawable/nomer1" />
+
+    <ImageView
+        android:id="@+id/nomer2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginTop="-7dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@id/tengah"
+        android:src="@drawable/nomer2" />
+
+    <ImageView
+        android:id="@+id/tengah"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7dp"
+        android:src="@drawable/garis" />
+
+    <ImageView
+        android:id="@+id/nomer3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-7dp"
+        android:layout_toRightOf="@+id/tengah"
+        android:src="@drawable/nomer3belum" />
+
+    <ImageView
+        android:id="@+id/nomer4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/garis"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-7dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/nomer4belum" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearkategori"
+        android:layout_below="@id/garis"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/uploadgambar"
+                    android:textAllCaps="false"
+                    android:textColor="#29CBEC"
+                    android:background="@drawable/buttondaftar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_height="155dp"
+                    android:layout_width="match_parent" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tambahfoto1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/namaorganisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Nama Organisasi"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/namaorganisasi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/jenisorganisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaorganisasi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Jenis Organisasi"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_alignTop="@id/jenisorganisasi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/jenisorganisasi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Deskripsi"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/deskripsi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/edit_text" />
+
+            <Spinner
+                android:id="@+id/fokusutama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deskripsi"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/fokusutama"
+                android:layout_marginRight="25dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/edit_text"
+                android:layout_alignTop="@id/fokusutama"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-6dp"/>
+
+            <Spinner
+                android:id="@+id/fokustambahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fokusutama"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:entries="@array/fokustambahan"
+                android:layout_marginRight="25dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/edit_text"
+                android:layout_alignTop="@id/fokustambahan"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-6dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearkategori"
+        android:background="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/kembali"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kembali"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/selanjutnya"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Selanjutnya"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </GridLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
